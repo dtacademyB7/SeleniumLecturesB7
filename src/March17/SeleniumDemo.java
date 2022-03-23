@@ -1,11 +1,27 @@
+package March17;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CurrentUrl {
+public class SeleniumDemo {
 
 
     public static void main(String[] args) {
 
+
+//        System.setProperty("webdriver.edge.driver", "C:\\Users\\Nuclues\\Documents\\browserDrivers\\msedgedriver.exe");
+//
+//        WebDriver driver = new EdgeDriver(); // initializes a browser
+//
+//        driver.get("https://www.duotech.io/");
+
+//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Nuclues\\Documents\\browserDrivers\\geckodriver.exe");
+//
+//        WebDriver driver = new FirefoxDriver(); // initializes a browser
+//
+//        driver.get("https://www.duotech.io/");
 
 
 
