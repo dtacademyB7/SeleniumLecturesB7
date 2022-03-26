@@ -6,13 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.*;
 import java.time.Duration;
 import java.util.List;
 
 public class WebTables3 {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws AWTException {
 
         System.setProperty("webdriver.chrome.driver", "/Users/duotech/Documents/browserDrivers/chromedriver");
 
@@ -27,6 +28,11 @@ public class WebTables3 {
 
 
         List<WebElement> currencies = driver.findElements(By.xpath("//table[@class='lcw-table layout-fixed']//tbody//tr//td[2]"));
+
+
+        Robot robot = new Robot();
+
+
 
 
         for (WebElement currency : currencies) {
