@@ -36,5 +36,15 @@ public class HandlingIframes {
 
         System.out.println(driver.findElement(By.xpath("//p[contains( text(), 'content goes')]")).getText());
 
+        driver.switchTo().defaultContent(); // switches the driver context to the main window
+
+        System.out.println(driver.findElement(By.tagName("h3")).getText());
+
+        //When a page has 2 iframes and you are in the first iframe and need to switch to 2nd iframe,
+        // you need to first switch back to the main page and then switch to 2nd iframe
+
+
+
+
     }
 }
